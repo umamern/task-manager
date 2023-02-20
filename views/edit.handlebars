@@ -1,0 +1,13 @@
+<div id="edit-container">
+  
+  <form 
+    action="/tasks/{{data._id}}?_method=PUT"
+    method="post"
+    enctype="application/x-www-form-urlencoded"
+  >
+    <input type="hidden" name="_method" value="PUT" />
+    <label for="">Task</label>
+    <input type="text" name="task" value="{{data.task}}" /><br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
